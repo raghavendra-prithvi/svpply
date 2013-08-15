@@ -37,7 +37,7 @@ module Svpply
       @image_height = hash["image_height"]
       @saves = hash["saves"]
       @notes = hash["notes"]
-	  @store = hash["store"]
+      @store = hash["store"]
       @status_id = hash["status_id"]
       @url = hash["page_url"]
       @date_created = hash["date_created"]
