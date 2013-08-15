@@ -3,7 +3,7 @@ module Svpply
     attr_reader :id, :title, :price, :formatted_price, :currency_code,
         :discount, :discount_code, :category, :categories, :gender, :image,
         :image_height, :image_width, :saves, :notes, :status_id,
-        :date_created, :date_updated, :url, :svpply_url
+        :date_created, :date_updated, :url, :svpply_url, :store
 
     def self.products(attrs=nil)
       unless attrs.empty?
@@ -37,6 +37,7 @@ module Svpply
       @image_height = hash["image_height"]
       @saves = hash["saves"]
       @notes = hash["notes"]
+	  @store = hash["store"]
       @status_id = hash["status_id"]
       @url = hash["page_url"]
       @date_created = hash["date_created"]
